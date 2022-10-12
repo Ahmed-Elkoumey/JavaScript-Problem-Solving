@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 1.1rem;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+                background-color: #2ed46e;
+                color: #33613e;
+			}
+			#work {
+				margin-top: 30px;
+				font-size: 20px;
+			}
+			#break {
+				margin-top: 30px;
+				margin-bottom: 70px;
+				font-size: 20px;
+			}
+			button {
+				border: 1px solid #33613e;
+				cursor: pointer;
+				width: 100px;
+				height: 40px;
+				border-radius: 10px;
+				margin: 10px;
+			}
+			.active {
+				background-color: rgb(108, 232, 197);
+				color: #33613e;
+			}
+			.deactive {
+				background-color: gray;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="color: rgb(108, 232, 197)">Pomodoro Timer</h1>
+		<div id="work">
+			<span>Work Time</span>
+			<span id="workHrs">00</span>
+			<span>:</span>
+			<span id="workMins">00</span>
+			<span>:</span>
+			<span id="workSec">00</span>
+		</div>
+		<div id="break">
+			<span>Break Time</span>
+			<span id="breakHrs">00</span>
+			<span>:</span>
+			<span id="breakMnts">00</span>
+			<span>:</span>
+			<span id="breakSec">00</span>
+		</div>
+		<div id="ctrl-btns">
+			<button id="start-w" class="active">Start Work</button>
+			<button id="start-b" class="deactive" disabled>Start Break</button>
+			<button id="res-w" class="deactive" disabled>Resume Work</button>
+			<button id="end-w" class="deactive" disabled>End Work</button>
+		</div>
+		<script src="pomodoro.js"></script>
+	</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lap two</title>
+</head>
+
+<body>
+
+
+    <script>
+                    //TASK 1
+        /*___________________________________*/
+        
+          function arraySum(arr1,arr2)
+          {
+              var arrayLength=0;
+
+              if(arr1.length>arr2.length)
+              {
+                  arrayLength=arr1.length;
+              }
+              else
+              {
+                  arrayLength=arr2.length;
+              }
+
+              var sum=[];
+
+              for(var i=0; i<arrayLength;i++)
+              {
+                  if(arr1[i] === undefined){
+                      arr1[i]=0;
+                  }
+                  else if(arr2[i] === undefined)
+                  {
+                      arr2[i]=0;
+                  }
+                  sum.push(arr1[i]+arr2[i]);
+              }
+              return sum;
+              
+          }
+  
+          //console.log(arraySum([1, 0, 9], [3, 7, 3, 8]));
+          
+                        //TASK 2
+        /*___________________________________*/
+
+
+        function userNameSearch(){
+            var names=[];
+            for(var i=0;i<5;i++){
+               names[i]= prompt("pleas Enter A name");
+               
+            }
+            console.log(names);
+            
+            if (names != null) {
+                document.write("Names is " + names.join("-"));
+            }
+            
+            var searchInput;
+            var Input = prompt("Search For A Name",searchInput);
+            console.log(Input);
+            console.log(names);
+        
+            switch(names.indexOf(Input))
+            {
+                case 0: "first";
+                console.log("First");
+                break
+                case 1:console.log(  "second");
+                break;
+                case 2:console.log(  "third");
+                break;
+                case 3:console.log(  "fourth");
+                break;
+                 case 4:console.log(  "fifth");
+                break;
+                default: alert("Name Is Not Here");
+        
+                
+            }
+            console.log(Input);
+        
+        }
+        userNameSearch();
+
+          
+    </script>
+</body>
+
+</html>

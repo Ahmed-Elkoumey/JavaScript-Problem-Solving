@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            background-color: greenyellow;
+            text-align: center;
+        }
+        span{
+            padding-top: 10%;
+            font-size: 10em;
+            
+            color: rgb(71, 114, 51);
+            
+        }
+        div button{
+            color: greenyellow;
+           background-color: rgb(71, 114, 51);
+           border-radius: 20px;
+           border-color: greenyellow;
+            padding: 10px 20px;
+        }
+    </style>
+    <title>Timer</title>
+</head>
+<body>
+    <span id="hrs"></span>
+    <span>:</span>
+    <span id="mins"></span>
+    <span>:</span>
+    <span id="secs"></span>
+    <div>
+
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+    </div>
+    
+    <script src="timer.js"></script>
+</body>
+</html>

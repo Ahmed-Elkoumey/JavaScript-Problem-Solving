@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Task</title>
+    <script>
+       
+        
+        //TASK 5
+ function letterCount(temp) {
+    var count = temp.split('me');
+    
+    console.log(count);
+    var counter = count.length - 1 ;
+    return counter;
+}
+console.log(letterCount("hello my name is menna"));
+
+
+
+/*--------------------------------------------*/
+//TASK6
+debugger
+function drow(keyword, count) {
+    var space = " ";
+    var star = "*";
+    var counter = parseInt(count);
+    if (!isNaN(counter) && counter > 0 && keyword == "increase") {
+
+        for (var i = 1; i <= counter; i++) {
+            console.log(space += star);
+        }
+
+    } else if (!isNaN(counter) && counter > 0 && keyword == "decrease") {
+        for (var i = counter; i >= 1; i--) {
+            space = "";
+            for (var j = i; j >= 1; j--) {
+                space += star
+            }
+            console.log(space);
+        }
+    } else { onsole.log("enter valid num"); }
+}
+drow("increase", "10");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonce</title>
+</head>
+<body>
+    <script>
+              //TASK 3
+        /*---------------------------------------*/
+        function newArray(strings)
+        {
+        
+            
+           var x= strings.map(function (elem,index){
+               return elem.toLowerCase();
+               console.log(elem.toLowerCase());
+            })
+            return x;
+            // console.log(strings); 
+        }
+        var arr = ["AHMED","ALAA","ANAS","ESAA"];
+       // console.log(newArray(arr));
+
+                //TASK4
+        /*---------------------------------------*/
+
+        function arraySort(arr, decAndInc) {
+
+            if (decAndInc === "increas") {
+                return arr.sort(function (a, b) { return a.length - b.length });
+            }
+            else if (decAndInc === "decreas") {
+                return arr.sort(function (a, b) { return b.length - a.length });
+            }
+        }
+
+        var sor = ["ahmed", "amr", "ebrahiem"];
+        //console.log(arraySort(sor, "decreas"), sor);
+
+
+                    //TASK 5
+        /*---------------------------------------*/
+
+        function negativeNumber(negArr)
+        {
+         var negative=   negArr.filter(function (e){
+            return e<0;
+            })
+            return negative;
+        }
+
+        // console.log( negativeNumber([-1,2,3,-5]) );
+
+
+
+                    //TASK 6
+        /*---------------------------------------*/
+
+        function trimWord(trimed)
+        {
+
+           var cut= trimed.split("-");
+            var wordTrimed=cut.join("");
+           
+           return wordTrimed;
+        }
+
+console.log(trimWord("Ahmed-elkoumey , ahmed-abdo"));
+
+    </script>
+</body>
+</html>
